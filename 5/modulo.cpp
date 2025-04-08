@@ -4,7 +4,7 @@
 using namespace std;
 
 int mod(int a, int b) {
-	return (a >= 0 ? a : -a) % b;
+	return a % b + b * (a % b < 0);
 }
 
 int len(char* string) {
